@@ -61,7 +61,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.acoversinBy;
+})();
 })();
 </script>
 ```
@@ -234,6 +236,7 @@ acoversinBy.ndarray( 3, x, 2, 1, y, -1, y.length-1, accessor );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-strided-special-acoversin-by@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 function accessor( v, i ) {
     if ( (i%3) === 0 ) {
@@ -256,6 +259,7 @@ console.log( y );
 acoversinBy.ndarray( x.length, x, 1, 0, y, -1, y.length-1, accessor );
 console.log( y );
 
+})();
 })();
 </script>
 </body>
@@ -347,7 +351,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
-[@stdlib/math/base/special/acoversin]: https://github.com/stdlib-js/math-base-special-acoversin/tree/umd
+[@stdlib/math/base/special/acoversin]: https://github.com/stdlib-js/math-base-special-acoversin/tree/umd/tree/umd
 
 </section>
 
